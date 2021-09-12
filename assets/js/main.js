@@ -48,7 +48,7 @@ Vue.component('pf-card', {
   <div class="card">
     <div class="carf-image">
       <figure class="image is-4by3">
-        <img :src="image">
+        <img :src="image" class="pf-image">
       </figure>
     </div>
     <div class="has-text-centered card-title">
@@ -173,6 +173,14 @@ new Vue({
         url:'http://ec2-35-73-217-236.ap-northeast-1.compute.amazonaws.com/events',
         desc:`イベント情報を位置情報と日付情報を付与することで、地図上からイベントPR・イベントの発見ができるアプリを作ってみました。Leaflet.jsとAjaxを駆使してシンプルで直感的なUXにこだわりました。`,
         github:'https://github.com/akira-yp/now_on_map'
+      },
+      {
+        name:'PORTFOLIO PAGE',
+        subtitle:'このページです。',
+        image:'assets/img/portfolio.png',
+        url:'https://akira-yp.github.io/',
+        desc:`Vue.jsとBulmaを使用して作成しました。`,
+        github:'https://github.com/akira-yp/akira-yp.github.io'
       }
     ]
   }

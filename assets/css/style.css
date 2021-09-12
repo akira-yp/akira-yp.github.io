@@ -89,3 +89,8 @@ i{
   border-radius:10px;
   padding:1rem;
 }
+
+.pf-image {
+  height:250px;
+  object-fit:cover;
+}
