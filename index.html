@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <section id="home" class="hero  has-text-centered gray section">
+        <div class="hero-body">
+          <h1 class="title is-2">AKIRA SUZUKI PORTFOLIO PAGE</h1>
+        </div>
+        <nav>
+          <div class="columns  is-hidden-mobile">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="">
+                  <a href="#home">HOME</a>
+                </li>
+                <li class="">
+                  <a href="#profile">PROFILE</a>
+                </li>
+                <li class="">
+                  <a href="#skills">SKILLS</a>
+                </li>
+                <li class="">
+                  <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="">
+                  <a href="#contact">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+      </section>
+
+      <section id="profile" class="section white">
+        <div class="has-text-centered">
+          <h3 class="title is-3">PROFILE</h3>
+        </div>
+        <div class="section">
+          <div class="profile-wrap">
+            <div class="has-text-centered">
+              <img :src="prof.intro.avatar" class="avatar-m">
+              <p class="title is-5">{{ prof.intro.name }}</p>
+              <div class="content">
+                <span class=""><i class="fas fa-map-marker-alt"></i>{{ prof.intro.address }}</span>
+                <a :href="prof.intro.github"><i class="fab fa-github"></i></a>
+                <a :href="prof.intro.twitter"><i class="fab fa-twitter-square"></i></a>
+              </div>
+
+              <div class="content">
+                <p style="white-space: pre-line">{{ prof.intro.greeting }}</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="wrap">
+            <history-card v-for="history in prof.histories" v-bind="history">
+            </history-card>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section gray">
+        <div class="has-text-centered">
+          <h3 class="title is-3">SKILLS</h3>
+        </div>
+        <div class="section">
+          <div class="wrap">
+            <skill-card v-for="skill in skills" v-bind="skill"></skill-card>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section white">
+        <div class="has-text-centered">
+          <h3 class="title is-3">PORTFOLIO</h3>
+        </div>
+        <div class="section">
+          <div class="wrap">
+            <pf-card v-for="pf in pfs" v-bind="pf"></pf-card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section gray">
+        <div class="has-text-centered">
+          <h3 class="title is-3">CONTACT</h3>
+        </div>
+      </section>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
