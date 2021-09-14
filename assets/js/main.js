@@ -54,7 +54,7 @@ Vue.component('pf-card', {
     <div class="has-text-centered card-title">
      <p class="title is-4">{{ name }}</p>
      <p class="subtitle is-6">{{ subtitle }}</p>
-     <a :href="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><a>
+     <a :href="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
      <a :href="url" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i><a>
    </div>
    <div class="">
@@ -171,7 +171,7 @@ new Vue({
         subtitle:'地図上から未来のイベントを投稿・発見できるアプリ',
         image:'assets/img/nowonmap-logo1.png',
         url:'http://ec2-35-73-217-236.ap-northeast-1.compute.amazonaws.com/events',
-        desc:`イベント情報を位置情報と日付情報を付与することで、地図上からイベントPR・イベントの発見ができるアプリを作ってみました。Leaflet.jsとAjaxを駆使してシンプルで直感的なUXにこだわりました。`,
+        desc:`イベント情報に位置情報と日付情報を付与することで、地図上からイベントPR・イベントの発見ができるアプリを作ってみました。Leaflet.jsとAjaxを駆使してシンプルで直感的なUXにこだわりました。`,
         github:'https://github.com/akira-yp/now_on_map'
       },
       {
