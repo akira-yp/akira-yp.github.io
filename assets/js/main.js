@@ -46,21 +46,23 @@ Vue.component('history-card', {
 Vue.component('pf-card', {
   template:`
   <div class="card">
-    <div class="carf-image">
+    <div class="card-image">
       <figure class="image is-4by3">
         <img :src="image" class="pf-image">
       </figure>
     </div>
-    <div class="has-text-centered card-title">
-     <p class="title is-4">{{ name }}</p>
-     <p class="subtitle is-6">{{ subtitle }}</p>
-     <a :href="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-     <a :href="url" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i><a>
-   </div>
-   <div class="">
-    <p style="white-space: pre-line">
-      {{ desc }}
-    </p>
+    <div class="card-content">
+      <div class="has-text-centered card-title">
+       <p class="title is-4">{{ name }}</p>
+       <p class="subtitle is-6">{{ subtitle }}</p>
+       <a :href="github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+       <a :href="url" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i><a>
+     </div>
+     <div class="">
+      <p style="white-space: pre-line">
+        {{ desc }}
+      </p>
+     </div>
    </div>
   </div>
   `,
@@ -170,7 +172,7 @@ new Vue({
         name:'NOW ON MAP',
         subtitle:'地図上から未来のイベントを投稿・発見できるアプリ',
         image:'assets/img/nowonmap-logo1.png',
-        url:'http://ec2-35-73-217-236.ap-northeast-1.compute.amazonaws.com/events',
+        url:'https://nowonmap.com',
         desc:`イベント情報に位置情報と日付情報を付与することで、地図上からイベントPR・イベントの発見ができるアプリを作ってみました。Leaflet.jsとAjaxを駆使してシンプルで直感的なUXにこだわりました。`,
         github:'https://github.com/akira-yp/now_on_map'
       },

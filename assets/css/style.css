@@ -60,14 +60,13 @@ a{
   #portfolio .card{
     max-width: 350px;
     min-width: 300px;
-    padding:0 ;
     height:auto;
     border-radius:10px;
-    padding:1rem;
+    padding:0;
   }
 
   .pf-image {
-    height:250px;
+    /* height:250px; */
     object-fit:cover;
   }
 }
@@ -105,16 +104,14 @@ a{
     padding:0 ;
     height:auto;
     border-radius:10px;
-    padding:1rem;
+    /* padding:1rem; */
+  }
+  .pf-image {
+    /* height:250px; */
+    object-fit:cover;
   }
 
 }
-/*
-.card{
-  height:250px;
-  border-radius:10px;
-  padding:1rem;
-} */
 
 .card-title{
   margin-bottom:1rem;
